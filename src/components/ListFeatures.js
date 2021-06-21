@@ -22,7 +22,7 @@ const ListFeatures = () => {
     <Box py={18}>
       <Container maxW="container.lg" px="4">
         <Stack direction={{ base: "Column", md: "row" }} sx={{ gap: "3rem" }}>
-          <Box alignItems="center">
+          <Box w="100%">
             <img
               src={working}
               alt="Illustration with a computer on the desk"
