@@ -3,9 +3,13 @@ import monitor from "../assets/monitor.svg";
 
 const Header = () => {
   return (
-    <Container as="header" maxW="container.lg" pt="28" pb="10" centerContent>
-      <Stack direction={["column-reverse", null, "row"]} sx={{ gap: "2rem" }}>
-        <Box>
+    <Container as="header" maxW="container.lg" pt="28" pb="10">
+      <Stack
+        direction={["column-reverse", null, "row"]}
+        sx={{ gap: "1.5rem" }}
+        alignItems="center"
+      >
+        <Box flex="1">
           <Heading as="h1" mb="6">
             Welcome to{" "}
             <Text as="span" color="teal">
@@ -21,7 +25,7 @@ const Header = () => {
             Buy it now
           </Button>
         </Box>
-        <Box>
+        <Box flex="1">
           <img
             src={monitor}
             alt="Illustration with a computer on the desk"
